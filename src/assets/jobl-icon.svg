@@ -1,0 +1,12 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="joblGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7B2FF7"/>
+      <stop offset="50%" stop-color="#5E3BEE"/>
+      <stop offset="100%" stop-color="#2FB8FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="512" height="512" rx="120" ry="120" fill="url(#joblGradient)"/>
+  <path d="M 310 130 L 310 330 C 310 378 272 410 220 410 C 180 410 148 390 132 358 L 178 332 C 186 350 200 360 218 360 C 242 360 258 346 258 322 L 258 130 Z"
+        fill="white"/>
+</svg>
