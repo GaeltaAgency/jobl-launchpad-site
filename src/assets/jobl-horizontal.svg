@@ -1,0 +1,17 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="joblGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7B2FF7"/>
+      <stop offset="50%" stop-color="#5E3BEE"/>
+      <stop offset="100%" stop-color="#2FB8FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon tile serves AS the 'J' -->
+  <rect x="40" y="80" width="240" height="240" rx="56" ry="56" fill="url(#joblGradient4)"/>
+  <path d="M 185 140 L 185 235 C 185 258 167 273 143 273 C 124 273 109 263 101 248 L 122 236 C 126 244 133 249 142 249 C 153 249 161 242 161 231 L 161 140 Z"
+        fill="white"/>
+
+  <!-- 'obl' in solid deep brand purple for a cohesive, unified look -->
+  <text x="300" y="270" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="180" font-weight="800" fill="#5E3BEE" letter-spacing="-4">obl</text>
+</svg>
