@@ -27,18 +27,17 @@ function Contact() {
 
   return (
     <div className="mx-auto max-w-5xl px-6 py-20">
-      <div className="max-w-2xl">
-        <h1 className="text-4xl font-bold tracking-tight md:text-5xl">Contact us</h1>
-        <p className="mt-4 text-lg text-muted-foreground">
-          Have a question about JOBL, an integration request or want a demo? We'd love to hear
-          from you.
+      <div className="section-shell max-w-3xl rounded-xl p-8 md:p-10">
+        <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">Contact JOBL</h1>
+        <p className="mt-4 text-lg leading-8 text-muted-foreground">
+          For product questions, partnership discussions or implementation interest, contact us directly.
         </p>
       </div>
 
       <div className="mt-12 grid gap-8 md:grid-cols-2">
-        <div className="rounded-2xl border border-border bg-secondary/40 p-6">
-          <h2 className="text-lg font-semibold">Direct contact</h2>
-          <ul className="mt-4 space-y-3 text-sm">
+        <div className="surface-panel rounded-xl p-6">
+          <h2 className="text-lg font-semibold text-foreground">Direct contact</h2>
+          <ul className="mt-5 space-y-4 text-sm text-foreground">
             <li className="flex items-center gap-3">
               <User className="h-4 w-4 text-primary" />
               Filip Nádaždy
@@ -56,27 +55,27 @@ function Contact() {
 
         <form
           onSubmit={(e) => { e.preventDefault(); window.location.href = mailto; }}
-          className="rounded-2xl border border-border bg-card p-6"
+          className="rounded-xl border border-border bg-card p-6 shadow-soft"
         >
-          <h2 className="text-lg font-semibold">Send a message</h2>
-          <div className="mt-4 space-y-3">
+          <h2 className="text-lg font-semibold text-foreground">Send a message</h2>
+          <div className="mt-4 space-y-4">
             <label className="block text-sm">
-              <span className="mb-1 block font-medium">Name</span>
+              <span className="mb-1.5 block font-medium text-foreground">Name</span>
               <input value={name} onChange={(e) => setName(e.target.value)} required
-                className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-ring" />
+                className="w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-ring" />
             </label>
             <label className="block text-sm">
-              <span className="mb-1 block font-medium">Email</span>
+              <span className="mb-1.5 block font-medium text-foreground">Email</span>
               <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required
-                className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-ring" />
+                className="w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-ring" />
             </label>
             <label className="block text-sm">
-              <span className="mb-1 block font-medium">Message</span>
+              <span className="mb-1.5 block font-medium text-foreground">Message</span>
               <textarea value={message} onChange={(e) => setMessage(e.target.value)} required rows={5}
-                className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-ring" />
+                className="w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-ring" />
             </label>
             <button type="submit"
-              className="inline-flex h-10 items-center rounded-full bg-brand-gradient px-5 text-sm font-medium text-white shadow-brand transition-transform hover:-translate-y-0.5">
+              className="inline-flex h-11 items-center rounded-md bg-primary px-5 text-sm font-semibold text-primary-foreground hover:bg-primary/92">
               Send message
             </button>
           </div>
@@ -85,3 +84,4 @@ function Contact() {
     </div>
   );
 }
+
