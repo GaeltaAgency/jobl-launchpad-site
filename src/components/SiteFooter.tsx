@@ -3,17 +3,16 @@ import logo from "@/assets/jobl-horizontal.svg";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-24 border-t border-border bg-secondary/40">
+    <footer className="mt-24 border-t border-border bg-secondary/45">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-12 md:grid-cols-4">
         <div className="md:col-span-2">
           <img src={logo} alt="JOBL" className="h-8 w-auto" />
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            All-in-one workforce and project management platform for construction,
-            industrial and subcontracting companies.
+            Workforce and project operations platform for construction and industrial subcontracting teams.
           </p>
         </div>
         <div>
-          <h4 className="text-sm font-semibold">Product</h4>
+          <h4 className="text-sm font-semibold text-foreground">Product</h4>
           <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
             <li><Link to="/features" className="hover:text-foreground">Features</Link></li>
             <li><Link to="/about" className="hover:text-foreground">About</Link></li>
@@ -21,7 +20,7 @@ export function SiteFooter() {
           </ul>
         </div>
         <div>
-          <h4 className="text-sm font-semibold">Legal</h4>
+          <h4 className="text-sm font-semibold text-foreground">Legal</h4>
           <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
             <li><Link to="/privacy" className="hover:text-foreground">Privacy Policy</Link></li>
             <li><Link to="/terms" className="hover:text-foreground">Terms of Service</Link></li>
@@ -29,7 +28,7 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-border">
+      <div className="border-t border-border/80">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} JOBL. All rights reserved.</p>
           <p>
@@ -42,3 +41,4 @@ export function SiteFooter() {
     </footer>
   );
 }
+
